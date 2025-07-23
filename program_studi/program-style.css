@@ -1,0 +1,81 @@
+/* program */
+.detail {
+    padding-top: 50px;
+    padding-left: 100px;
+    max-width: 900px;
+}
+.detail-program {
+    padding-top: 50px;
+    padding-left: 30px;
+    max-width: 900px;
+}
+
+.detail-program h1 {
+    margin-bottom: 0px;
+}
+
+.MI {
+    max-width: 900px;
+    padding: 40px 30px;
+}
+.MI h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.MI h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.MI ul {
+    padding-left: 20px;
+}
+
+.MI li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.KA {
+    max-width: 900px;
+    padding-left: 30px;
+}
+.KA h2 {
+    margin-top: 30px;
+}
+
+.KA h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.KA ul {
+    padding-left: 20px;
+}
+
+.KA li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.daftar-sekarang {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.daftar {
+    display: inline-block;
+    background-color: #2d5c88;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.daftar:hover {
+    background-color: #81aed8;
+}
