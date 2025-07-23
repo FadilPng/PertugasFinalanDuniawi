@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univesitas Handayani Makanssar</title>
+    <link rel="stylesheet" href="style.css">  <!-- css global tempat style navbarnya dan body jadi kalau ada style yang mau ditambah, tambah saja disini-->
+</head>
+<body>
+    <!-- ini bagian Header bisa langsung di copy -->
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="ini logo">
+        </a>
+        <div class="navbar-menu">
+            <a href="index.html">Beranda</a> <!-- beranda fadil-->
+            <a href="#">Tentang</a> <!-- Tentang Hasyim-->
+            <a href="#">Kontak</a> <!-- Kontak Fajar-->
+            <a href="#">Pendaftaran </a> <!-- pendaftaran Hasyim-->
+        </div>
+        <div>
+            <input type="text" class="search-input" placeholder="Cari..." />
+        </div>
+    </div>
+
+    <!-- Slider foto-->
+    <div class="slider" id="slider-container">
+        <img class="slider-img active" src="assets/kampus1.jpg" alt="harusnya ada sir">
+        <img class="slider-img" src="assets/kampus2.jpg" alt="harusnya ada sir mk.2">
+        <img class="slider-img" src="assets/kampus3.jpg" alt="harusnya ada sir mk.3">
+        <img class="slider-img" src="assets/kampus4.jpg" alt="harusnya ada sir mk.4">
+        
+        <button class="arrow arrow-kiri" onclick="prevSlide()">&#9664;</button>
+        <button class="arrow arrow-kanan" onclick="nextSlide()">&#9654;</button>
+    </div>
+
+    <!-- bagian Program Studi -->
+    <div class="program-studi">
+        <h2>Program Studi</h2>
+        <section class="container-program">
+            <!-- card diploma -->
+            <a href="program_studi/diploma.html" class="link-program"> <!--Fajar-->
+                <div class="card-program" style="background-image: url('assets/diploma.jpg')">
+                    <div class="label-program">Diploma</div>
+                    <div class="overlay-program">
+                        <div class="text-program">
+                            <strong>D3 Komputer Akuntansi<br></strong>
+                            <strong>D3 Menejemen Informatika<br></strong>
+                            <strong style="opacity: 0;"> a</strong> <!--saya ndak tau cara atur tinggi overlaynya :v-->
+                        </div>
+                        <div class="program-arrow">›</div>
+                    </div>
+                </div>
+            </a>
+            <!-- card sarjana -->
+            <a href="program_studi/sarjana.html" class="link-program"> <!--Fajar-->
+                <div class="card-program" style="background-image: url('assets/sarjana.jpg')">
+                    <div class="label-program" id="label-sarjana">Sarjana</div>
+                    <div class="overlay-program" id="overlay-sarjana">
+                        <div class="text-program">
+                            <strong>S1 Sistem Komputer<br></strong>
+                            <strong>S1 Teknik Informatika<br></strong>
+                            <strong>S1 Sistem Informasi</strong>
+                        </div>
+                        <div class="program-arrow">›</div>
+                    </div>
+                </div>
+            </a>
+            <!-- card magister -->
+            <a href="program_studi/magister.html" class="link-program"> <!--Fajar-->
+                <div class="card-program" style="background-image: url('assets/magister.jpg')">
+                    <div class="label-program" id="label-magister">Magister</div>
+                    <div class="overlay-program" id="overlay-magister">
+                        <div class="text-program">
+                            <strong><br></strong> <!--saya ndak tau cara atur tinggi overlaynya :v-->
+                            <strong>S2 Sistem Komputer<br></strong>
+                            <strong style="opacity: 0;"> a</strong> <!--saya ndak tau cara atur tinggi overlaynya :v-->
+                        </div>
+                        <div class="program-arrow">›</div>  
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <div class="berita">
+        <h2>Berita Dan Kegiatan</h2>
+        <section class="container-berita">
+            <!-- berita 1 -->
+            <a href="#" class="link-berita">
+                <div class="card-berita">
+                    <div class="gambar-berita">
+                        <img src="assets/berita1.png">
+                    </div>
+                    <div class="konten-berita">
+                        <div class="judul-berita">
+                            <h3>Pengumuman Final - Pelunasan BPP</h3>
+                        </div>
+                        <div></div>
+                        <div class="isi-berita">
+                            <div>Pengumuman Final – Pelunasan BPP</div>
+                        </div>
+                    </div>
+                    <div class="tanggal-berita">
+                        <div class="hari">11</div>
+                        <div class="bulan">JUL 2025</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- berita 2 -->
+            <a href="#" class="link-berita"> <!-- Fadil-->
+                <div class="card-berita">
+                    <div class="gambar-berita">
+                        <img src="assets/berita2.jpg">
+                    </div>
+                    <div class="konten-berita">
+                        <div class="judul-berita">
+                            <h3>Universitas Handayani Makassar Meluluskan 
+                                Mahasiswa Tanpa Skripsi melalui Jalur Magang Riset: 
+                                Langkah Inovatif Menuju Kampus Merdeka</h3>
+                        </div>
+                        <div></div>
+                        <div class="isi-berita">
+                            <div>Makassar – Universitas Handayani Makassar kembali menunjukkan komitmennya 
+                                dalam menerapkan program Merdeka Belajar Kampus Merdeka (MBKM) dengan meluluskan 
+                                sejumlah mahasiswa tanpa melalui jalur skripsi, melainkan melalui program Magang 
+                                Riset yang diakui setara dengan...</div>
+                        </div>
+                    </div>
+                    <div class="tanggal-berita">
+                        <div class="hari">17</div>
+                        <div class="bulan">MEI 2025</div>
+                    </div>
+                </div>
+            </a>
+            <!-- berita 3 -->
+            <a href="#" class="link-berita"> <!-- Fadil-->
+                <div class="card-berita">
+                    <div class="gambar-berita">
+                        <img src="assets/berita3.jpg">
+                    </div>
+                    <div class="konten-berita">
+                        <div class="judul-berita">
+                            <h3>Penerimaan Mahasiswa Baru 2025</h3>
+                        </div>
+                        <div></div>
+                        <div class="isi-berita">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="tanggal-berita">
+                        <div class="hari">22</div>
+                        <div class="bulan">APR 2025</div>
+                    </div>
+                </div>
+            </a>
+            <!-- berita 4 q -->
+            <a href="#" class="link-berita"> <!-- Fadil-->
+                <div class="card-berita">
+                    <div class="gambar-berita">
+                        <img src="assets/berita4.jpg">
+                    </div>
+                    <div class="konten-berita">
+                        <div class="judul-berita">
+                            <h3>Workshop Public Speaking</h3>
+                        </div>
+                        <div></div>
+                        <div class="isi-berita">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="tanggal-berita">
+                        <div class="hari">11</div>
+                        <div class="bulan">APR 2025</div>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div> 
+    <!-- ini bagian footer bisa langsung di copy -->
+    <footer class="kaki">
+        <div>
+            <h1>Universitas Handayani Makassar</h1>
+            <table class="tabel">
+                <tr><td>Andi Muh Fadil</td><td style="opacity: 0;">a</td><td>2023020001</td></tr>
+                <tr><td>Fajar Siddiq</td> <td style="opacity: 0;">a</td><td>2023020024</td></tr>
+                <tr><td>Hasyim Syahid Salihun</td><td style="opacity: 0;">a</td><td>2021020046</td></tr>
+            </table>
+        </div>
+        <div style="opacity: 0;">a</div>
+        <div style="opacity: 0;">a</div>
+        <div style="opacity: 0;">a</div>
+        <div style="opacity: 0;">a</div>
+        <div style="opacity: 0;">a</div>
+        <div style="opacity: 0;">a</div>
+        <h2 style="color: #5c5c5c;">Tugas Akhir Pemrograman Web</h2>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

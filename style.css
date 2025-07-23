@@ -1,0 +1,308 @@
+/* untuk bagian body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+
+/* Untuk Style Navbar */
+.navbar{
+    background-color: #2d5c88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.navbar a:hover{
+    background-color: #81aed8;
+}
+
+.search-input {
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+    width: 160px;
+  }
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+    font: 16px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+/* slider foto */
+.slider {
+    position: relative;
+    height: 600px;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider img.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+/* tombol panah */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.arrow:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+.arrow-kanan{
+    right:20px;
+}
+
+.arrow-kiri{
+    left: 20px;
+}
+
+/* program studi */
+.program-studi {
+    padding: 40px 30px;
+    background-color: white;
+}
+
+.program-studi h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.link-program{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.container-program {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* card program studi */
+.card-program {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1400px) {
+    .card-program{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.card-program:hover {
+    transform: translateY(-10px);
+}
+
+.label-program {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: rgba(255, 20, 147, 0.85);
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#label-sarjana{
+    background-color: #2c7dc8;
+}
+#label-magister{
+    background-color: rgb(195, 63, 195);
+}
+
+.overlay-program {
+    position: absolute;
+    bottom: 40px;
+    left: -10px;
+    right: 10px;
+    background-color: rgba(255, 20, 147, 0.85);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+#overlay-sarjana{
+    background-color: #2c7dc8;  /* ndak satau value rgbanya :v */
+    opacity: 0.85;
+}
+#overlay-magister{
+    background-color: rgb(195, 63, 195, 0.85);
+}
+
+.overlay-program:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 20, 147);
+}
+#overlay-sarjana:hover{
+    background-color: #2c7dc8; /* ndak satau value rgbanya :v */
+    opacity: 1;
+}
+#overlay-magister:hover{
+    background-color: rgb(195, 63, 195);
+}
+
+.program-text {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.program-arrow {
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+/* berita dan kegiatan */
+.berita h2{
+    padding-left:40px;
+    background-color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+.link-berita{
+    text-decoration: none;
+}
+.container-berita{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.card-berita {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    min-height: 200px;
+    min-width: 700px;
+    transition: transform 0.3s ease;
+}
+
+.card-berita:hover{
+    transform: translateY(-10px);
+}
+  
+.gambar-berita img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+  
+.konten-berita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.judul-berita h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+  
+.isi-berita {
+    font-size: 14px;
+    color: #555;
+}
+  
+.tanggal-berita {
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    min-width: 60px;
+    font-size: 12px;
+}
+.tanggal-berita .hari {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kaki{
+    padding: 50px;
+    background-color: #ddd;
+}
+
+.kaki div{
+    display: flex;
+    gap: 650px;
+    color: #5c5c5c;
+}
+.kaki h1 {
+    color: #5c5c5c;
+}
