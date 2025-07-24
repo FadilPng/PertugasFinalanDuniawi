@@ -10,6 +10,8 @@
       padding: 30px;
       background: #f9f9f9;
       font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: auto;
     }
     h2 {
       text-align: center;
@@ -55,6 +57,51 @@
       color: #444;
       margin-top: 5px;
     }
+
+    .form-pendaftaran {
+  background-color: #f4f4f4;
+  padding: 30px 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.form-pendaftaran h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-pendaftaran form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-pendaftaran label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.form-pendaftaran input,
+.form-pendaftaran select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-pendaftaran button {
+  margin-top: 20px;
+  background-color: #2a5c8a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-pendaftaran button:hover {
+  background-color: #1f4d74;
+}
   </style>
 </head>
 <body>
@@ -124,6 +171,34 @@
       </table>
     </div>
   </div>
+
+  <section class="form-pendaftaran">
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+    <form onsubmit="submitForm(event)">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="nohp">No. HP / WhatsApp</label>
+      <input type="tel" id="nohp" required>
+
+      <label for="prodi">Program Studi</label>
+      <select id="prodi" required>
+        <option value="">-- Pilih Program Studi --</option>
+        <option>Sistem Informasi</option>
+        <option>Teknik Informatika</option>
+        <option>Manajemen</option>
+        <option>Akuntansi</option>
+      </select>
+
+      <label for="berkas">Upload Berkas (PDF/JPG)</label>
+      <input type="file" id="berkas" accept=".pdf,.jpg,.jpeg,.png" required>
+
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+  </section>
 
   <footer class="kaki">
     <div>
