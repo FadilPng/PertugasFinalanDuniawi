@@ -372,3 +372,36 @@
 .tombol-kontak:hover {
     background-color: #81aed8;
 }
+
+.galeri{
+    padding: 40px 30px;
+    background-color: white;
+}
+.galeri h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+.bagian-galeri{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card-galeri {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card-galeri:hover {
+    transform: translateY(-10px);
+}
