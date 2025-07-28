@@ -1,7 +1,8 @@
 Andi Muh Fadil (FadilPng) 2023020001 :
 -Index.html
 
-Fajar Siddiq (FajarSiddiq05) 2023020024 :/n
+Fajar Siddiq (FajarSiddiq05) 2023020024 :
+
 -diploma.html
 -magister.html
 -sarjana.html
